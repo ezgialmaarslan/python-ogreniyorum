@@ -1,0 +1,21 @@
+# Sayı Tahmin Oyunu V2.
+# İlk sürüm, while döngüsünü öğrenmeden önce hazırlanmıştı.
+# Bu sürümde oyun, kullanıcı doğru tahmini yapana kadar devam eder.
+
+
+import random
+
+sayi = random.randint(1, 10)
+
+tahmin = int(input("Bir sayi tahmin et: "))
+
+while tahmin != sayi:
+  if tahmin > sayi:
+    print("Daha küçük bir sayi tahmin et!")
+
+  elif tahmin < sayi:
+    print("Daha büyük bir sayi tahmin et!")
+
+  tahmin = int(input("Tekrar tahmin et: "))
+
+print("Doğru bildin!")
